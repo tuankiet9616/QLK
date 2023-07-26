@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="683.0" minWidth="1073.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox minHeight="100.0" style="-fx-background-color: #FFFFFF;" styleClass="shadow" stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </BorderPane.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxHeight="30.0" minHeight="30.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label style="-fx-text-fill: #24425A;" text="Kiểm kê phiếu mua hàng">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="65.0" minWidth="10.0" prefWidth="65.0" />
+                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="65.0" minWidth="10.0" prefWidth="65.0" />
+                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="55.0" minWidth="10.0" prefWidth="55.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="65.0" minWidth="10.0" prefWidth="65.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label style="-fx-text-fill: #24425A;" text="Mã phiếu" />
+                        <TextField GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label style="-fx-text-fill: #24425A;" text="Tên phiếu:" GridPane.columnIndex="2" />
+                        <TextField GridPane.columnIndex="3">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label style="-fx-text-fill: #24425A;" text="Đơn vị:" GridPane.columnIndex="4" />
+                        <TextField GridPane.columnIndex="5">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label style="-fx-text-fill: #24425A;" text="Người lập:" GridPane.columnIndex="6" />
+                        <TextField GridPane.columnIndex="7">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label style="-fx-text-fill: #24425A;" text="Tên ncc:" GridPane.rowIndex="1" />
+                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label style="-fx-text-fill: #24425A;" text="Trạng thái:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label style="-fx-text-fill: #24425A;" text="Ngày lập:" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <DatePicker GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </GridPane.margin>
+                        </DatePicker>
+                     </children>
+                  </GridPane>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </top>
+         <center>
+            <VBox style="-fx-background-color: #FFFFFF;" styleClass="shadow" stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <TreeTableView fixedCellSize="1.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                      <TreeTableColumn maxWidth="50.0" minWidth="50.0" prefWidth="50.0" text="STT" />
+                      <TreeTableColumn minWidth="100.0" prefWidth="100.0" text="Mã hàng hóa" />
+                        <TreeTableColumn minWidth="150.0" prefWidth="150.0" text="Tên hàng hóa" />
+                        <TreeTableColumn minWidth="60.0" prefWidth="75.0" text="Đơn vị" />
+                        <TreeTableColumn prefWidth="75.0" text="Quy cách">
+                           <columns>
+                              <TreeTableColumn minWidth="75.0" prefWidth="75.0" text="Độ dài" />
+                              <TreeTableColumn minWidth="75.0" prefWidth="75.0" text="Kích thước" />
+                           </columns>
+                        </TreeTableColumn>
+                        <TreeTableColumn minWidth="100.0" prefWidth="100.0" text="Số lượng" />
+                        <TreeTableColumn minWidth="150.0" prefWidth="150.0" text="Đơn giá" />
+                        <TreeTableColumn minWidth="200.0" prefWidth="200.0" text="Thành tiền" />
+                        <TreeTableColumn minWidth="100.0" prefWidth="100.0" text="Action" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TreeTableView>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

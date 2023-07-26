@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox minHeight="758.0" minWidth="1073.0" style="-fx-background-radius: 20 20 20 20;" VBox.vgrow="ALWAYS">
+         <children>
+            <BorderPane style="-fx-background-radius: 20 20 20 20;" VBox.vgrow="ALWAYS">
+               <top>
+                  <BorderPane minHeight="150.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <HBox alignment="CENTER_LEFT" minHeight="20.0" style="-fx-background-color: #5B8CA8; -fx-background-radius: 20 20 0 0;" BorderPane.alignment="CENTER_LEFT">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #ECEEF4;" text="Dashboard" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Times New Roman" size="24.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </HBox>
+                     </top>
+                  </BorderPane>
+               </top>
+               <center>
+                  <VBox style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <HBox minHeight="20.0" style="-fx-background-color: #5B8CA8; -fx-background-radius: 0 0 20 20;" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>

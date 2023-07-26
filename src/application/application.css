@@ -1,0 +1,99 @@
+
+#vboxLeft{
+	
+	-fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5),5,0,0,0);
+	-fx-background-color: #24425A;
+	-fx-background-radius: 20 20 20 20;
+}
+
+#vboxTop{
+	-fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5),5,0,0,0);
+	-fx-background-color: #24425A;
+}
+
+#vboxHeadHome{
+	-fx-background-color:#24425A;
+	-fx-background-radius:0 0 50 50;
+	-fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5),5,0,0,0);
+}
+
+#lbClose{
+	-fx-background-color:#24425A;
+	-fx-background-radius:0 0 50 0;
+}
+
+#lbClose:hover{
+	-fx-background-color:#FFFAF0;
+	-fx-background-radius:0 0 50 0;
+	-fx-border-width:2px 2px 2px 2px;
+	-fx-border-radius:0 0 50 0;
+	-fx-border-color:#D2DCE6;
+	-fx-text-fill:#24425A;
+}
+
+#lbMaximize{
+	-fx-background-color:#24425A;
+	-fx-background-radius:0;
+}
+#lbMaximize:hover{
+	-fx-background-color:#FFFAF0;
+	-fx-border-width:2px 2px 2px 2px;
+	-fx-border-color:#D2DCE6;
+	-fx-text-fill:#24425A;
+}
+
+#lbMinimize{
+	-fx-background-color:#24425A;
+	-fx-background-radius:0;
+}
+
+#lbMinimize:hover{
+	-fx-background-color:#FFFAF0;
+	-fx-border-width:2px 2px 2px 2px;
+	-fx-border-color:#D2DCE6;
+	-fx-text-fill:#24425A;
+}
+
+#lbRestore{
+	-fx-background-color:#24425A;
+	-fx-background-radius:0;
+}
+#lbRestore:hover{
+	-fx-background-color:#FFFAF0;
+	-fx-border-width:2px 2px 2px 2px;
+	-fx-border-color:#D2DCE6;
+	-fx-text-fill:#24425A;
+}
+#Material{
+	-fx-fill:#FFFFFF;
+}
+#Material:hover{
+	-fx-fill:#24425A;
+}
+#Material:fucused{
+	-fx-fill:#24425A;
+}
+.button{
+	-fx-background-color:#24425A;
+	-fx-background-radius:10;
+	-fx-font-size: 19px;
+	-fx-font-weight:800;
+	-fx-text-fill: white;
+}
+
+.button:hover{
+	-fx-background-color:#5B8CA8;
+	-fx-border-radius:10;
+	-fx-border-width:2px 2px 2px 2px;
+	-fx-background-radius:10;
+	-fx-border-color:#D2DCE6;
+	-fx-text-fill:#24425A;
+}
+.button:pressed{
+	-fx-background-color:#B0C4DE;
+}
+.button:focused{
+	-fx-background-color:#D2DCE6;
+	-fx-background-radius:10;
+	-fx-text-fill:#24425A;
+}
